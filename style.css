@@ -20,3 +20,13 @@ main {
 
 }
 
+.block-quote {
+	border-left: 3px solid black;
+	padding: 5px 10px;
+	margin-left: -10px;
+}
+
+.block-quote p {
+	margin:0;
+}
+
