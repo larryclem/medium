@@ -7,14 +7,17 @@
 </head>
 
 <body>
-	<header></header>
+	<header>
+
+
+	</header>
 
 	<main>
 		
 		<div class ="author">
-			<img/>
-			<p></p>
-			<p></p>
+			<img src="https://cdn-images-1.medium.com/fit/c/36/36/1*oZu4yGg3LiS4YBe_HnOKew.jpeg"/>
+			<span>Christopher Pitt</span>
+			<span>Jan 14, 2014 6 min read</span>
 		</div>
 
 		<h2> React Components </h2>
@@ -29,7 +32,7 @@
 		Thanks to Pete Hunt for helping to improve this!</p>
 		</div>
 
-		<h2> Embedded HTML </h2>
+		<h3> Embedded HTML </h3>
 
 		<p>If you’ve been developing websites for a while, you may have flinched when I spoke about using HTML within your JavaScript. For the longest time, a development paradigm has existed which says that you should split HTML and JavaScript. Words like unobtrusive have been repurposed to express this kind of separation. That is exactly how I felt, until I started working with React.<br><br>
 		The reason this paradigm exists is to decrease coupling (how much things depend on each other) and increase cohesion (how well different things work together). So we have created an environment in which we try our best to make HTML (and templates) as free of logic as possible. We then need to attach behaviour to this in the form of external scripts.<br><br>
@@ -42,7 +45,7 @@
 
 		</div>
 
-		<h2> Components </h2>
+		<h3> Components </h3>
 
 		<p>Hopefully you’re willing to try this whole embedded HTML thing. In case not, I will create JS examples along with the JSX examples in this tutorial Let’s look at a simple component, just to get a feel for how one defines them:</p>
 
@@ -89,7 +92,7 @@ React.renderComponent(
 
 		<div class="block-quote"><p>You can find more examples of this in the React download, at: <br>http://facebook.github.io/react/downloads.html.</p></div>
 
-		<h2> Rendering Multiple Components </h2>
+		<h3> Rendering Multiple Components </h3>
 
 		<p>Another common question is how to return multiple components from within a single render() method. The trick is that only one component can be returned, at a time. To return multiple, they must be wrapped within a container element. This is because of how the JS methods work. Let’s look at some JSX code:</p>
 
@@ -169,7 +172,7 @@ React.renderComponent(
 
 		<div class="block-quote"><p><em>Hopefully you’re beginning to see the value of JSX over the traditional JavaScript approach. Considering you’re still talking about div’s and span’s, it boils down to the same thing. Only shorter.</em></p></div>
 
-		<h2> Compiling JSX </h2>
+		<h3> Compiling JSX </h3>
 
 		<p>If you look at the accompanying source-code, you will see how easy it is to embed and use JSX in your web pages. If you plan on using JSX in production systems, you will no doubt consider compiling the JSX files to JS files. There’s a tool you can use for this, and to install it you need to run the command:</p>
 
@@ -185,7 +188,7 @@ React.renderComponent(
 
 		<div class="block-quote"><p><em>You can find more information, about the tools available, at: http://facebook.github.io/react/docs/tooling-integration.html.</em></p></div>
 
-		<h2> Conclusion </h2>
+		<h3> Conclusion </h3>
 
 		<p>Components are at the heart of React, and understanding them is essential to understanding how to build solid React interfaces. We’ve taken a brief look at a few examples, but there’s so much more to components. Stay tuned!<br><br>
 		If you enjoyed this tutorial; it would be helpful if you could click the Recommend button and share it with other developers.</p>
@@ -216,9 +219,12 @@ React.renderComponent(
 		<div class = "main-bottom-row2">
 			<div class ="profile-set">
 
-			<img/>
-			<p></p>
-			<button></button>
+			<img src ="https://cdn-images-1.medium.com/fit/c/60/60/1*oZu4yGg3LiS4YBe_HnOKew.jpeg"/>
+
+			<div class="bio-content"><p>Christopher Pitt</p><p>Programming Robotics Minecraft</p>
+			</div>
+
+			<button><p>Follow</p></button>
 
 			</div>
 
@@ -235,9 +241,15 @@ React.renderComponent(
 
 	</main>
 
-	<section></section>
+	<section>
 
-	<footer></footer>
+
+	</section>
+
+	<footer>
+
+
+	</footer>
 
 </body>
 </html>
